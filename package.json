@@ -10,11 +10,29 @@
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1"
   },
+  "type": "module",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
-    "format": "prettier --write src/**/*.{js,jsx,ts,tsx}"
+    "lint": "eslint --fix src/**/*.{js,jsx,ts,tsx}",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx}",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{cjs,json}": [
+      "prettier --write"
+    ],
+    "*.{scss,css}": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
   },
   "browserslist": {
     "production": [
@@ -29,12 +47,16 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@eslint/js": "^9.9.1",
     "eslint": "~8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.35.0",
     "globals": "^15.9.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.9",
     "prettier": "^3.3.3",
     "typescript-eslint": "^8.2.0"
   }
