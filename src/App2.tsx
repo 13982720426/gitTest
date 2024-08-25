@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './App2.scss';
 // const e = 'World';
 // const f = '!';
 const App2 = () => {
@@ -17,6 +17,13 @@ const App2 = () => {
     <div>
       App2
       <div>{a}</div>
+      <div className='app2'>
+        <div className='header'>header</div>
+        <div className='content'>
+          <div className='left'>left</div>
+          <div className='right'>right</div>
+        </div>
+      </div>
     </div>
   );
 };

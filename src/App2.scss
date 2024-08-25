@@ -1,0 +1,45 @@
+.app2 {
+  width: 100%;
+  border: 1px solid red;
+  background-color: rgb(202 213 246);
+
+  .header {
+    height: 50px;
+
+    // background-color: #CCCFFF!important;
+    background-color: #cccfff !important;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+
+    .left {
+      width: 200px;
+      border: 1px solid blue;
+    }
+
+    // .right {flex: 1;border: 1px solid green;}
+    .right {
+      flex: 1;
+      border: 1px solid green;
+    }
+  }
+}
+
+.app3 {
+}
+
+.app4 {
+}
+
+.app5,
+.app6 {
+}
+
+// .app3 {
+// }
+// .app4{}
+
+// .app5,.app6{}

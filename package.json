@@ -8,7 +8,8 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "sass": "^1.77.8"
   },
   "type": "module",
   "scripts": {
@@ -16,7 +17,8 @@
     "build": "react-scripts build",
     "lint": "eslint --fix src/**/*.{js,jsx,ts,tsx}",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx}",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "style": "pnpm run format && stylelint **/*.css **/*.scss --fix"
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": [
@@ -27,7 +29,6 @@
       "prettier --write"
     ],
     "*.{scss,css}": [
-      "stylelint --fix",
       "prettier --write"
     ],
     "*.md": [
@@ -57,7 +58,13 @@
     "globals": "^15.9.0",
     "husky": "^8.0.0",
     "lint-staged": "^15.2.9",
+    "postcss": "^8.4.41",
+    "postcss-scss": "^4.0.9",
     "prettier": "^3.3.3",
+    "stylelint": "^16.8.2",
+    "stylelint-config-recommended": "^14.0.1",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-scss": "^6.5.1",
     "typescript-eslint": "^8.2.0"
   }
 }
