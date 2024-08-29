@@ -1,7 +1,7 @@
 name: Sync to Gitee
 
 on:
-  master:
+  push: # push触发同步
     branches:
       - push # 触发同步的分支
 
