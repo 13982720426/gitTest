@@ -8,7 +8,9 @@
 
 ### git概括图
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/2625525/1724833840382-c103b510-9fde-4a86-a7eb-686808c10119.jpeg)
+<!-- ![](https://cdn.nlark.com/yuque/0/2024/jpeg/2625525/1724833840382-c103b510-9fde-4a86-a7eb-686808c10119.jpeg) -->
+
+![git概括图.jpeg](./images/git概括图.jpeg)
 
 #### 其他相关命令
 
@@ -21,7 +23,10 @@
 #### git merge --squash
 
 [git merge --squash](https://git-scm.com/docs/git-merge/zh_HANS-CN#git-merge---squash) 将一个分支的所有提交压缩成一个单独的提交进行合并，不会产生合并提交，提交历史上只有一个新的提交。
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/2625525/1724823877012-3f672a1e-d619-421a-8eb2-764da0ba619c.jpeg)
+
+<!-- ![](https://cdn.nlark.com/yuque/0/2024/jpeg/2625525/1724823877012-3f672a1e-d619-421a-8eb2-764da0ba619c.jpeg) -->
+
+![squash.jpeg](/images/squash.jpeg)
 
 ##### 优点：
 
@@ -44,7 +49,10 @@ git checkout m
 git rebase b
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/2625525/1724833188614-1de1de62-f59b-4ab6-82a7-f90b47cd2582.jpeg)
+![rebase.jpeg](./images/rebase.jpeg)
+
+<!-- ![](https://cdn.nlark.com/yuque/0/2024/jpeg/2625525/1724833188614-1de1de62-f59b-4ab6-82a7-f90b47cd2582.jpeg) -->
+
 [git rebase -i](https://git-scm.com/docs/git-rebase/zh_HANS-CN#_%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F) **交互式**重定向意味着你有机会编辑被重定向的提交。 你可以重新排列提交的顺序，也可以删除它们（剔除坏的或不需要的补丁）。
 git rebase -i HEAD~n(列出即将重新定位的提交。让用户在变基之前编辑该列表，n是要向前合并几个提交
 
@@ -539,7 +547,7 @@ export default {
 > 如果eslint配置的是 JavaScript modules (import/export)，请使用 export default 导出 commitlint.config.mjs。
 > 同时给 package.json 添加支持module的属性 `"type": "module",`
 
-**@commitlint/config-conventional** 这是一个规范配置,标识采用什么规范来执行消息校验, 这个默认是***Angular***的提交规范
+**@commitlint/config-conventional** 这是一个规范配置,标识采用什么规范来执行消息校验, 这个默认是**_Angular_**的提交规范
 
 | **类型** | **描述**                                               |
 | -------- | ------------------------------------------------------ |
