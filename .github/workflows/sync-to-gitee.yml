@@ -1,0 +1,22 @@
+name: Sync to Gitee
+
+on:
+  master:
+    branches:
+      - push # 触发同步的分支
+
+jobs:
+  sync-to-gitee:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Sync to Gitee
+        uses: wearerequired/git-mirror-action@master
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.GITEE_PRIVATE_KEY }}
+        with: # 入参 参考文档 https://github.com/wearerequired/git-mirror-action
+          source-repo: 'git@github.com:13982720426/gitTest.git'
+          destination-repo: 'git@gitee.com:jackhoo_98/git-test.git'
